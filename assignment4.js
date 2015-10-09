@@ -88,3 +88,53 @@ speak();*/
 	this.totalMiles = 0;
 	this.lastOilChange = 0;
 }*/
+
+//21. Create an object to hold information on your favorite recipe. It should have properties for title (a string), servings (a number), and ingredients (an array of strings). Your object should have a publically available method that when called, will log out the recipe within the console so that the recipe information looks like this:
+
+/*var recipe = {
+    "title": "Guacamole",
+    "serves": 4,
+    "ingredients": ["- 3 Avocados", "- 1 Lime", "- 1 Teaspoon Salt", "- 1/2 Cup Onion", "- 3 Tablespoons Cilantro", "- 2 Diced Tomatoes", "- 1 Teaspoon Garlic", "- 1 Pinch Ground Pepper"]
+};
+
+console.log(recipe.title);
+console.log('Serves: ' + recipe.serves);
+console.log('Ingredients:');
+for (var i = 0; i < recipe.ingredients.length; i++) {
+    console.log(recipe.ingredients[i]);
+}*/
+
+//22. Keep track of which books you read and which books you want to read! Create an array of objects, where each object describes a book and has properties for the title (a string), author (a string), and alreadyRead (a boolean indicating if you read it yet). Iterate through the array of books. For each book, log the book title and book author like so: "The Hobbit by J.R.R. Tolkien". Then, use a conditional to change the output depending on whether you read it yet or not. If you read it, log a string like 'You already read "The Hobbit" by J.R.R. Tolkien', and if not, log a string like 'You still need to read "The Lord of the Rings" by J.R.R. Tolkien.' Make sure your object contains at least 5 books.
+
+/*var books = [
+	{title: "The Shepherd's Crown",
+	author: "Sir Terry Pratchett",
+	alreadyRead: false
+	},
+	{title: "Snuff",
+	author: "Sir Terry Pratchett",
+	alreadyRead: false
+	},
+	{title: "Wyrd Sisters",
+	author: "Sir Terry Pratchett",
+	alreadyRead: true
+	},
+	{title: "Guards! Guards!",
+	author: "Sir Terry Pratchett",
+	alreadyRead: true
+	},
+	{title: "Equal Rites",
+	author: "Sir Terry Pratchett",
+	alreadyRead: true
+	}
+	];
+
+for (var i = 0; i < books.length; i++) {
+	var book = books[i];
+	var bookInfo = book.title + '" by ' + book.author;
+	if (book.alreadyRead) {
+    console.log('You already read "' + bookInfo);
+	} else {
+    console.log('You still need to read "' + bookInfo);
+	}
+}*/
