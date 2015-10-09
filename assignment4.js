@@ -59,24 +59,26 @@ for (var property in cat) {
 
 //8. Now, create a public method called speak. Within the speak method you will use a conditional to check the type of Animal being created. If it’s a dog, return “The <color> dog is barking!” If it’s a cat return “The <color> cat is meowing!” instead. Call that method after the Animal class has been instantiated.
 
-/*var Animal = function(type, breed, color, height, length) {
+var Animal = function(type, breed, color, height, length) {
 	this.type = type;
 	this.breed = breed;
 	this.color = color;
 	this.height = height;
 	this.length = length;
-}
+};
 
 var cat = new Animal("Cat", "Siamese", "Grey", "9in", "18in");
-Animal.prototype.speak = function() {
+
+
+function speak() {
 	if (this.type == "Dog") {
-		console.log("The " + color + " dog is barking!");
+		console.log("The " + this.color + " dog is barking!");
 	} else {
-		console.log("The " + color + " cat is meowing!");
+		console.log("The " + this.color + " cat is meowing!");
 	}
-}*/
+}
 
-
+speak();
 
 // 11. Create an abstract base class called Vehicle that accepts four parameters including make (string), model (string), total miles (number), and the mileage for the last oil change (number).
 
